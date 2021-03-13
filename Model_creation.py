@@ -47,7 +47,7 @@ def data_cleaning():
         
     corpus = []
     
-    for i in range(0, 527383):
+    for i in range(0, 527386):
     
         review = re.sub('[^a-zA-Z]', ' ', df.iloc[i, 1])
         review = review.lower()
