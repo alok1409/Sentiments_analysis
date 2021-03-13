@@ -56,7 +56,7 @@ def scrap_reviews():
 def store_in_database():
     df = pd.read_csv('scrapped_reviews.csv')
     conn = sql.connect('Review_db.db')
-    df.to_sql('Review_db', conn)       
+    df.to_sql('scrappedreviews', conn)       
 
 def main():
     global urls
